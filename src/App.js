@@ -9,6 +9,12 @@ const App = () => {
       <div className="display">0</div>
       <div className="buttons">
         <Buttons content="AC" />
+        <Buttons content="±" />
+        <Buttons content="%" />
+        <Buttons content="÷" />
+        <Buttons content="7" />
+        <Buttons content="8" />
+        <Buttons content="9" />
       </div>
       <div className="bottom">-</div>
     </div>
