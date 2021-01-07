@@ -15,6 +15,18 @@ const App = () => {
         <Buttons content="7" />
         <Buttons content="8" />
         <Buttons content="9" />
+        <Buttons content="×" />
+        <Buttons content="4" />
+        <Buttons content="5" />
+        <Buttons content="6" />
+        <Buttons content="-" />
+        <Buttons content="1" />
+        <Buttons content="2" />
+        <Buttons content="3" />
+        <Buttons content="+" />
+        <Buttons content="0" />
+        <Buttons content="." />
+        <Buttons content="=" />
       </div>
       <div className="bottom">-</div>
     </div>
