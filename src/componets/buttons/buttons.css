@@ -21,8 +21,9 @@
   grid-column: 1 / span 2;
   border-radius: 57.5px;
   position: relative;
-  justify-content: flex-start;
-  padding-left: 43px;
+  justify-content: first baseline;
+  padding-left: 2px;
+  align-items: center;
 }
 
 .button.function {
@@ -33,3 +34,5 @@
 .button.operator {
   background: #f1a33c;
 }
+
+@media 
