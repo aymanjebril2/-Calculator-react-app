@@ -1,16 +1,10 @@
-.top {
-  display: flex;
-  height: 250px;
-  justify-content: space-between;
-  padding: 0 20px;
-}
-
 .display {
   font-size: 130px;
   font-weight: 300;
   margin-bottom: 20px;
+  text-align: justify;
+  margin-right: 50px;
   text-align: right;
-  margin-right: 20px;
 }
 
 .buttons {
@@ -20,4 +14,9 @@
   grid-gap: 20px;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(5, 1fr);
+}
+@media only screen and (max-width: 600px) {
+  .buttons {
+    max-width: 600px;
+  }
 }
