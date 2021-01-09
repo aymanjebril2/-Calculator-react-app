@@ -7,8 +7,9 @@
   font-size: 45px;
   height: 110px;
   justify-content: center;
-  width: 110px;
+  width: 120px;
   transition: filter 0.3s ease-in;
+  /* margin-left: 100px; */
 }
 
 .button:active,
