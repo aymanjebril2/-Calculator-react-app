@@ -13,6 +13,7 @@ const Value = () => {
     if (content === "AC") {
       setValue("0");
       setMemory(null);
+      setOperator(null);
       return;
     }
     if (content === "±") {
@@ -22,31 +23,45 @@ const Value = () => {
     if (content === "%") {
       setValue((num / 100).toString());
       setMemory(null);
+      setOperator(null);
       return;
     }
     if (content === "+") {
       setMemory(parseFloat(value));
       setValue("0");
+      setOperator("+");
       return;
     }
     if (content === "-") {
       setMemory(parseFloat(value));
       setValue("0");
+      setOperator("-");
+
       return;
     }
     if (content === "×") {
       setMemory(parseFloat(value));
       setValue("0");
+      setOperator("×");
+
       return;
     }
     if (content === "÷") {
       setMemory(parseFloat(value));
       setValue("0");
+      setOperator("×");
       return;
     }
     if (content === "=") {
-      setMemory(parseFloat(value));
+      if (!operator) return;
+      if (operator === "+") {
+        setValue((memory + parseFloat(value)).toString());
+      } else if (operator === "-") {
+        setValue((memory - parseFloat(value)).toString());
+      }
+
       setMemory(null);
+      setOperator(null);
       return;
     }
 
