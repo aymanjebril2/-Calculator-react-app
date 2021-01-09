@@ -4,11 +4,53 @@ import "./Value.css";
 
 const Value = () => {
   const [value, setValue] = useState("0");
-  //   const [memeroy, setMemeroy] = useState(null);
+  const [memory, setMemory] = useState(null);
+  const [operator, setOperator] = useState(null);
 
   const handleButtonPress = (content) => () => {
     let num = parseFloat(value);
-    setValue(parseFloat(num) + content);
+
+    if (content === "AC") {
+      setValue("0");
+      setMemory(null);
+      return;
+    }
+    if (content === "±") {
+      setValue((num * -1).toString());
+      return;
+    }
+    if (content === "%") {
+      setValue((num / 100).toString());
+      setMemory(null);
+      return;
+    }
+    if (content === "+") {
+      setMemory(parseFloat(value));
+      setValue("0");
+      return;
+    }
+    if (content === "-") {
+      setMemory(parseFloat(value));
+      setValue("0");
+      return;
+    }
+    if (content === "×") {
+      setMemory(parseFloat(value));
+      setValue("0");
+      return;
+    }
+    if (content === "÷") {
+      setMemory(parseFloat(value));
+      setValue("0");
+      return;
+    }
+    if (content === "=") {
+      setMemory(parseFloat(value));
+      setMemory(null);
+      return;
+    }
+
+    setValue(parseFloat(num + content).toString());
   };
   return (
     <div className="value">
