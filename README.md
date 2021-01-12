@@ -1,8 +1,10 @@
 ##### <img width="120" height="120" src='./src/img/calc.png'/>
 
-#### CALCULATOR -REACT -APP
+### CALCULATOR-REACT-APP
 
-## Usage :-
+#### check it online :
+
+#### Usage :-
 
 - React Hooks
 - React componets
