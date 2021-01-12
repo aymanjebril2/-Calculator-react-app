@@ -1,6 +1,6 @@
 import React from "react";
 
-const Comma = (value) => {
+const comma = (value) => {
   if (value === "0") return value;
   let output = "";
   let decimal = "";
@@ -21,4 +21,4 @@ const Comma = (value) => {
     : parseFloat(output).toLocaleString() + decimal;
 };
 
-export default Comma;
+export default comma;

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Buttons from "./Buttons";
 import "./Value.css";
-import Comma from "./Comma";
+import comma from "./comma";
 const Value = () => {
   const [value, setValue] = useState("0");
   const [memory, setMemory] = useState(null);
@@ -134,7 +134,7 @@ const Value = () => {
   };
   return (
     <div className="value">
-      <div className="display">{Comma(value)}</div>
+      <div className="display">{comma(value)}</div>
       <div className="buttons">
         <Buttons
           onButtonClick={handleButtonPress}
