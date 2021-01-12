@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Buttons from "./Buttons";
 import "./Value.css";
-import comma from "./comma";
+import comma from "./comma.js";
 const Value = () => {
   const [value, setValue] = useState("0");
   const [memory, setMemory] = useState(null);
