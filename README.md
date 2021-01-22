@@ -2,8 +2,6 @@
 
 ### CALCULATOR-REACT-APP
 
-#### check it online :
-
 #### Usage :-
 
 - React Hooks

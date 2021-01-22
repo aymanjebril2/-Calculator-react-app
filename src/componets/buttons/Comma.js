@@ -16,9 +16,11 @@ const comma = (value) => {
     output = output.substring(1);
   }
 
-  return isNeg
-    ? "-" + parseFloat(output).toLocaleString() + decimal
-    : parseFloat(output).toLocaleString() + decimal;
+  return `${
+    isNeg
+      ? "-" + parseFloat(output).toLocaleString() + decimal
+      : parseFloat(output).toLocaleString() + decimal
+  }`;
 };
 
 export default comma;
